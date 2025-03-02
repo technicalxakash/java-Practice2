@@ -98,4 +98,81 @@ finding min and max values
 8
 
 
+Variables
+it is a conatainer which holds the value while java program is executed
+
+
+public class Variables {
+
+	public static void main(String[] args) {
+//	int pincode=560060;
+//		System.out.println(pincode);
+		
+	//syntax=//Datatype variableNmae=variableValue
+		//Define and initializations
+		int pincode;//define 
+		pincode=560060;//intializations
+		pincode=22342;
+		int aa=pincode;
+		System.out.println(aa);
+
+	}
+
+}
+	4)types of datatypes
+	1.Instances variables
+	2.class variables
+	3.local variables
+	4.parameters
+
+1.Instances variables
+	public class Students {	
+      int id=101;
+	public static void main(String[] args) {
+		// instance yake adre obj create madudre matra nav variables na aceess madoke agadu
+		Students obj=new Students();
+		System.out.println(obj.id);
+	}
+
+}
+2.class variables //here we are using static keyword so that we are not creating the obj
+public class Students {	
+      static int id=101;
+	public static void main(String[] args) {		
+		System.out.println(id);
+	}
+}
+	public class Students {	
+      static int id=101;
+      static String name="akash";  //string is literals
+      String na="ak";
+	public static void main(String[] args) {		
+		System.out.println(id);		
+		System.out.println(name);
+		System.out.println(new Students().na);
+	}
+
+}	
+3.local variables=variables which are defining and initializing inside main methods
+public class Students {	
+     
+	public static void main(String[] args) {
+		int height =70;
+		System.out.println(height);
+	}
+	
+}
+
+4.parameters =we cant assign a value to the parameters and parameter can be defined not be initialzed
+public class Students {	
+     public static void test1(int height) {
+    	 
+    	 System.out.println(height);
+     }
+	public static void main(String[] args) {
+	test1(69);
+	}
+	
+}
+
 */
