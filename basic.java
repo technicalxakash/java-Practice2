@@ -175,4 +175,52 @@ public class Students {
 	
 }
 
+
+methods=behaviour, a block of code used to perform certain operations
+public class Methods {
+   public  void m1() {
+	   System.out.println("hello");
+   }
+	public static void main(String[] args) {
+		
+	Methods obj=new Methods();
+		obj.m1();
+	}
+}
+
+public class Methods { //bank
+	
+	      static int currentBalance=1000;
+         public static void greetCustomer(){
+        	 System.out.println("hello,good morning sir ! , welcome to the banking applications");
+         }
+       public void deposit(int amount) {
+    	    
+    	   currentBalance=currentBalance+amount;
+    	   System.out.println("your current balance after deposit is "+currentBalance);
+       }
+       
+       public static void withdrawal() {
+    	   int withdraw=300;
+    	   currentBalance=currentBalance-withdraw;
+    	   System.out.println("your current balance after withdrawal is "+currentBalance);
+       }
+       
+       public void getCurrentBalance() {
+    	   
+    	   System.out.println("your current balance is "+currentBalance);
+       }
+	public static void main(String[] args) {
+	greetCustomer();
+	System.out.println("you have in account is "+currentBalance);
+	Methods obj=new Methods();
+	obj.deposit(400);
+	
+	
+	withdrawal();
+	obj.getCurrentBalance();
+	
+	}
+}
+
 */
