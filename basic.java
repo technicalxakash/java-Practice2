@@ -223,4 +223,111 @@ public class Methods { //bank
 	}
 }
 
+
+Type Converstions
+package www.com.pg1;
+
+import java.util.Scanner;
+public class Program1 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the byte value : ");
+	byte bt=sc.nextByte();
+	System.out.println("the byte value is "+bt);
+	System.out.println("----------------------");
+	
+	System.out.println("enter the short value : ");
+	short st=sc.nextShort();
+	System.out.println("the short value is "+st);
+	System.out.println("----------------------");
+	
+	System.out.println("enter the integer value : ");
+	int it=sc.nextInt();
+	System.out.println("the integer value is "+it);
+	System.out.println("----------------------");
+	
+	System.out.println("enter the long value : ");
+	long lg=sc.nextLong();
+	System.out.println("the long value is "+lg);
+	System.out.println("----------------------");
+	
+	
+	System.out.println("enter the float value : ");
+	float ft=sc.nextFloat();
+	System.out.println("the float value is "+ft);
+	System.out.println("----------------------");
+	
+	System.out.println("enter the double value : ");
+	double db=sc.nextDouble();
+	System.out.println("the float value is "+db);
+	System.out.println("----------------------");
+}
+
+}
+
+
+package www.com.pg2;
+
+public class Program2 {
+
+	public static void main(String[] args) {
+			
+		//implicit 
+	byte b=126;
+	System.out.println("the byte value is "+b);
+	
+	short s=b;
+		System.out.println("the short value is "+s);
+		
+		int i=s;
+		System.out.println("the integer value is "+i);
+		
+		long l=i;
+		System.out.println("the long value is "+l);
+		
+		float f=l;
+		System.out.println("the float value is "+f);
+		
+		double d=f;
+		System.out.println("the double value is "+d);
+	
+		
+		//implicit type conversion
+		double d=126.0;
+		System.out.println("the double value is "+d);
+		
+		float f=(float)d;
+		System.out.println("the float value is "+f);
+		
+		long l=(long)f;
+		System.out.println("the long value is "+l);
+		
+		int i=(int)l;
+		System.out.println("the integer value is "+i);
+		
+		short s=(short)i;
+		System.out.println("the short value is "+s);
+		
+     	byte b=(byte)s;
+		System.out.println("the short value is "+b);
+   
+	}
+
+}
+
+       byte b=10;
+       short s=50;
+       int i=65000;
+       float f=25.16f;
+       long l=787787;
+       double d=52.89;
+       
+       char ch='A';
+       boolean bo = true;
+        
+       i=b;
+       System.out.println(i);  //implicit type converstion
+       
+       b=(byte)i;
+       System.out.println(b);   //expilicit type converstion
 */
