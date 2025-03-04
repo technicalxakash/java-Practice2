@@ -135,6 +135,49 @@ public class Variables {
 	}
 
 }
+
+example for instance variables
+import java.util.Scanner;
+
+public class Variables {
+//instances variables
+	String name;
+	String color;
+	String breed;
+	int age;
+	int cost;
+	 void alloacateData() {
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("enter the name of the dog : ");
+		 name = sc.nextLine();
+		 System.out.println("enter the color of the dog : ");
+		 color =sc.nextLine();
+		 System.out.println("enter the breed of the dog : ");
+		 breed =sc.nextLine();
+		 System.out.println("enter the age of the dog : ");
+		 age =sc.nextInt();
+		 System.out.println("enter the cost of the dog : ");
+		 cost =sc.nextInt();
+	 }
+		 
+		 void display(){
+			 System.out.println(name);
+			 System.out.println(color);
+			 System.out.println(breed);
+			 System.out.println(age);
+			 System.out.println(cost);
+			 
+		 }
+		 	 
+	public static void main(String[] args) {
+		Variables dog=new Variables();
+		dog.alloacateData();
+		dog.display();
+
+	}
+
+}
+
 2.class variables //here we are using static keyword so that we are not creating the obj
 public class Students {	
       static int id=101;
@@ -314,7 +357,6 @@ public class Program2 {
 	}
 
 }
-
        byte b=10;
        short s=50;
        int i=65000;
@@ -330,4 +372,6 @@ public class Program2 {
        
        b=(byte)i;
        System.out.println(b);   //expilicit type converstion
+
+
 */
