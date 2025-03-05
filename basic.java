@@ -206,6 +206,32 @@ public class Students {
 	
 }
 
+
+example 2 
+
+public class localVariables {
+    void add() {
+    	int a=20;
+    	int b=10;
+    	int c=a+b;
+    	System.out.println(c);
+    }
+    
+    void sub(int a, int b) {
+    	
+    	int c=a+b;
+    	System.out.println(c);
+    	
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		localVariables obj=new localVariables();
+				obj.add();
+				obj.sub(10, 5);
+	}
+
+}
+
 4.parameters =we cant assign a value to the parameters and parameter can be defined not be initialzed
 public class Students {	
      public static void test1(int height) {
