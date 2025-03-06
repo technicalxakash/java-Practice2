@@ -407,7 +407,6 @@ import java.util.Scanner;
 public class Scannerr {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the byte value :");
 		byte bt=sc.nextByte();
@@ -434,5 +433,153 @@ public class Scannerr {
 	}
 
 }
+
+Static and nonstatic 
+
+public class StaticOrNonstatic {
+	static {
+System.out.println("hi");
+	}
+	{
+	
+		System.out.println("hello");
+		
+	}
+	public Test2()
+	{		
+		System.out.println("great");
+	}
+	
+	
+	public static void main(String[] args) {
+	System.out.println("hiii hiii");
+	
+}
+}
+output=hi
+=hiii hiii
+
+
+public class StaticOrNonstatic {
+	
+//	static {
+//System.out.println("hi");
+//	}
+	{
+	
+		System.out.println("hello");
+		
+	}
+	public StaticOrNonstatic()
+	{		
+		System.out.println("great");
+	}
+	
+	
+	public static void main(String[] args) {
+	System.out.println("hiii hiii");
+	new StaticOrNonstatic();
+}
+}
+
+output=hiii hiii
+hello
+great
+
+public class StaticOrNonstatic {
+	
+//	static {
+//System.out.println("hi");
+//	}
+	{
+	
+		System.out.println("hello");
+		
+	}
+	public StaticOrNonstatic()
+	{		
+		System.out.println("great");
+	}
+	
+	
+	public static void main(String[] args) {
+	System.out.println("hiii hiii");
+	//new StaticOrNonstatic();
+}
+}
+
+output=hiii hiii
+
+public class StaticOrNonstatic {
+	
+	static int number;
+//static {
+//System.out.println("hi");
+//	}
+//	{
+//	
+//		System.out.println("hello");
+//		
+//	}
+	public StaticOrNonstatic()
+	{		
+		System.out.println("great");
+		number=10;
+	}
+	
+	
+	public static void main(String[] args) {
+	System.out.println("hiii hiii");
+	//new StaticOrNonstatic();
+	StaticOrNonstatic t1=new StaticOrNonstatic();
+	System.out.println(t1.number);
+	
+}
+}
+
+output=hiii hiii
+great
+10
+
+
+public class StaticOrNonstatic {
+	
+	static int number;
+static {
+System.out.println("hi");
+number=10;
+	}
+	{	
+		System.out.println("hello");
+		number=10;		
+	}
+	public StaticOrNonstatic()
+	{		
+		System.out.println("great");
+	
+	}
+		
+	public static void main(String[] args) {
+	System.out.println("hiii hiii");
+	//new StaticOrNonstatic();
+//	StaticOrNonstatic t1=new StaticOrNonstatic();
+//	System.out.println(t1.number);
+	StaticOrNonstatic t1=new StaticOrNonstatic();
+	StaticOrNonstatic t2=new StaticOrNonstatic();
+	StaticOrNonstatic t3=new StaticOrNonstatic();
+	StaticOrNonstatic t4=new StaticOrNonstatic();
+	StaticOrNonstatic t5=new StaticOrNonstatic();
+}
+}
+output=
+hi
+hiii hiii
+hello
+great
+hello
+great
+hello
+great
+
 */
 
