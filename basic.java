@@ -610,7 +610,14 @@ public class ArthematicOpertor {
         System.out.println("=========================");
     }
 }
-
+		//arthematic operators
+		int i=1009;
+		int j=906;
+		System.out.println(i+j);
+		System.out.println(i-j);
+		System.out.println(i*j);
+		System.out.println(i/j);
+		System.out.println(i%j);
 
 
 identifiers
@@ -730,5 +737,55 @@ public class PrintStatements {
 }
 
 
+//unary operators
+//++(Increment)=pre and post
+//--(decrement)=pre and post
+		int aa=10,a=10;
+		System.out.println(a);//10
+		System.out.println(++a);//11
+		System.out.println(a++);//11
+		System.out.println(a);//12
+		System.out.println("===========");
+		
+		System.out.println(aa);//10
+		System.out.println(--aa);//9
+		System.out.println(aa--);//9
+		System.out.println(aa);//8
+
+
+//Relational opertors
+		int i=10;
+		int j=89;
+		System.out.println(i==j);
+		System.out.println(i!=j);
+		System.out.println(i<j);
+		System.out.println(i>j);
+		System.out.println(i>=j);
+		System.out.println(i<=j);
+output=false
+true
+true
+false
+false
+true
+
+//conditional statements
+//&&(conditional and) 
+// ||(conditional or)
+		int i=90;
+		int j=100;
+		System.out.println(i<j && i>j); output=false
+		System.out.println(i<j || i>j); true
+
+//assignment operator
+		int i=1008;
+		i+=1;
+		System.out.println(i);
+		i-=1;
+		System.out.println(i);
+		i*=2;
+		System.out.println(i);
+		i/=2;
+		System.out.println(i);		
 */
 
