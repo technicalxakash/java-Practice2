@@ -787,5 +787,116 @@ true
 		System.out.println(i);
 		i/=2;
 		System.out.println(i);		
+
+
+Decision making statements problem
+
+//		Scanner sc=new Scanner(System.in);
+//		String normal="clear";
+//		System.out.println("Enter the fuel : ");
+//		int fuel=sc.nextInt();
+//		//System.out.println(" you Enter the fuel : "+fuel);
+//		System.out.println("Enter the wheather : ");
+//		String wheather=sc.next();
+//		//System.out.println("Enter the fuel : "+wheather);
+//		
+//		
+//		if (fuel>=5 && wheather.equals(normal)) {
+//			System.out.println("you can go for trip");
+//		}
+//		else {
+//			System.out.println("you can't go for trip");
+//			
+//			
+//		}
+//		if (fuel<5 || wheather!=normal ) { 
+//			
+//			System.out.println("Cnacel the trip ");
+//		}
+//			
+//		else if(fuel>=5) {
+//				System.out.println("refuel the vehicles");
+//			}
+//		else {
+//				System.out.println("wait until wheather it gets better");
+//			}
+//			
+//
+//
+//		
+//		
+//		}
+//
+//	}
+//	
+		        Scanner sc = new Scanner(System.in);
+//		        String normal = "clear";
+//
+//		        System.out.println("Enter the fuel: ");
+//		        int fuel = sc.nextInt();
+//		        sc.nextLine(); 
+//
+//		        System.out.println("Enter the weather: ");
+//		        String weather = sc.nextLine(); 
+//
+//		        if (fuel >= 5 && weather.equals(normal)) {
+//		            System.out.println("You can go for the trip.");
+//		        } 
+//		        if (weather.equals(normal) && fuel >= 5) {
+//		            System.out.println("You can go for the trip.");
+//		        } else if (weather.equals(normal) && fuel < 5) {
+//		            System.out.println("Fuel is low. Refill the fuel and then go for the trip.");
+//		        } else if (!weather.equals(normal) && fuel >= 5) {
+//		            System.out.println("Wait until the weather gets better.");
+//		        } else {
+//		            System.out.println("Cancel the trip.");
+//		        }
+
+      //  Scanner sc = new Scanner(System.in);
+        String normal = "clear";
+
+        System.out.println("Enter the fuel: ");
+        int fuel = sc.nextInt();
+        sc.nextLine(); 
+        
+
+        System.out.println("Enter the weather: ");
+        String weather = sc.nextLine(); 
+
+        if (fuel >= 5 && weather.equals(normal)) {
+            System.out.println("You can go for the trip.");
+        } 
+        if (weather.equals(normal) || fuel >= 5) {
+        	if (weather.equals(normal) && fuel < 5) {
+                System.out.println("Fuel is low. Refill the fuel and then go for the trip.");
+        	}
+        	
+        	if (!weather.equals(normal) && fuel >= 5) {
+                System.out.println("Wait until the weather gets better.");
+        	}
+    
+        	
+        	
+        } 
+        else {
+            System.out.println("Cancel the trip.");
+        }
+
+        String weekend="sunday";
+        System.out.println("enter the day : ");
+         String day1=sc.next();
+         
+        if(day1.equals(weekend)) System.out.println(" friend come for the trip ");
+        	
+        else System.out.println("fuck you");
+        
+        
+             
+		    }
+		}
+
+
+
+
 */
 
