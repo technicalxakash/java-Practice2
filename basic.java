@@ -1012,6 +1012,501 @@ public class loopps {
 
 		//4)prime number or not
 
+pattern programing 
+
+package www.com.pattern;
+
+public class pattern1 {
+
+	public static void main(String[] args) {
+		int i;
+		System.out.println("#");
+
+	}
+
+}
+//#
+
+package www.com.pattern;
+
+public class pattern2 {
+	public static void main(String[] args) {
+		
+	
+	for(int i=0;i<=5;i++) {
+		System.out.println("#");
+	}
+
+	}}
+//#
+//#
+//#
+//#
+//#
+//#
+
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class pattern3 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+	int size=sc.nextInt();
+		for(int i=0;i<=size;i++) {
+			System.out.print(" # ");
+		}
+
+	}
+
+}
+
+//enter the size : 
+//5
+// #  #  #  #  #  # 
+
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class patter4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+	int size=sc.nextInt();
+		for(int i=1;i<=size;i++)
+		{
+			for(int j=1;j<=size;j++)
+			{
+			System.out.print(" # ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//enter the size : 
+//6
+// #  #  #  #  #  # 
+// #  #  #  #  #  # 
+// #  #  #  #  #  # 
+// #  #  #  #  #  # 
+// #  #  #  #  #  # 
+// #  #  #  #  #  # 
+
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class pattern5 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+		int size=sc.nextInt();
+		for(int i=1;i<=size;i++)
+		{
+			for(int j=1;j<=size;j++)
+			{
+				System.out.print(i+" ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+
+//
+//enter the size : 
+//5
+//1 1 1 1 1 
+//2 2 2 2 2 
+//3 3 3 3 3 
+//4 4 4 4 4 
+//5 5 5 5 5 
+
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class pattern6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+		int size=sc.nextInt();
+		for(int i=1;i<=size;i++)
+		{
+			for(int j=1;j<=size;j++)
+			{
+				System.out.print(i+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//enter the size : 
+//5
+//1 1 1 1 1 
+//2 2 2 2 2 
+//3 3 3 3 3 
+//4 4 4 4 4 
+//5 5 5 5 5 
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class pattern7 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+		int size=sc.nextInt();
+		int count=1;
+		for(int i=1;i<=size;i++)
+		{
+			for(int j=1;j<=size;j++)
+			{
+				System.out.print(count+" ");
+				count++;
+			}
+			System.out.println();
+		}
+
+	}
+	}
+
+//enter the size : 
+//5
+//1 2 3 4 5 
+//6 7 8 9 10 
+//11 12 13 14 15 
+//16 17 18 19 20 
+//21 22 23 24 25 
+
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class patter8 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size : ");
+		int size=sc.nextInt();
+		int count=size*size;
+		for(int i=1;i<=size;i++)
+		{
+			for(int j=1;j<=size;j++)
+			{
+				System.out.print(count+" ");
+				count =count -1;
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+//enter the size : 
+//5
+//25 24 23 22 21 
+//20 19 18 17 16 
+//15 14 13 12 11 
+//10 9 8 7 6 
+//5 4 3 2 1 
+
+package www.com.pattern;
+
+import java.util.Scanner;
+
+public class pattern9 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	//	System.out.println("enter the size : ");
+		
+		for(int i=1;i<=5;i++) {
+			int k=i;
+			for(int j=1;j<=5;j++) {
+				
+				System.out.print(k+" ");
+				k=k+5;
+			}
+			System.out.println();
+		}
+	}
+
+}
+//1 6 11 16 21 
+//2 7 12 17 22 
+//3 8 13 18 23 
+//4 9 14 19 24 
+//5 10 15 20 25 
+
+
+package www.com.pattern;
+
+public class program10 {
+
+	public static void main(String[] args) {
+    for(int i=0;i<=5;i++) {
+    	
+    	for(int j=0;j<=5;j++) {
+    		System.out.print("# ");
+    }
+    	
+     	for(int j=0;j<=5;j++) {
+    		System.out.print("% ");
+    }
+  System.out.println();
+	}
+	}
+}
+//
+//# # # # # # % % % % % % 
+//# # # # # # % % % % % % 
+//# # # # # # % % % % % % 
+//# # # # # # % % % % % % 
+//# # # # # # % % % % % % 
+//# # # # # # % % % % % % 
+
+
+package www.com.pattern;
+
+public class pattern11 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=5;i++) {
+			for(int j=0;j<=i;j++) {
+				
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//* 
+//* * 
+//* * * 
+//* * * * 
+//* * * * * 
+//* * * * * * 
+
+package www.com.pattern;
+
+public class pattern12 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=5;i++) {
+			for(int j=0;j<=i;j++) {
+				
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+//0
+//11
+//222
+//3333
+//44444
+//555555
+
+package www.com.pattern;
+
+public class pattern13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		for(int i=1;i<=5;i++) {
+			for(int j=1; j<=i; j++) {
+
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+	}
+
+}
+//1
+//12
+//123
+//1234
+//12345
+
+package www.com.pattern;
+
+public class pattern14 {
+
+	public static void main(String[] args) {
+		
+		int count=1;
+		for(int i=1;i<=5;i++) {
+			for(int j=1; j<=i; j++) {
+
+				System.out.print(count+" ");
+				count++;
+				
+				
+			}
+			System.out.println();
+			
+		}
+
+	}
+
+}
+//1 
+//2 3 
+//4 5 6 
+//7 8 9 10 
+//11 12 13 14 15 
+
+
+package www.com.pattern;
+
+public class pattern15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	    for(int i=0;i<=5;i++) {
+	    	
+	    	for(int j=0;j<=5;j++) {
+	    		System.out.print("# ");
+	    }
+			for(int j=0;j<=i;j++) {
+				
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	
+	}
+}
+
+
+
+//# # # # # # * 
+//# # # # # # * * 
+//# # # # # # * * * 
+//# # # # # # * * * * 
+//# # # # # # * * * * * 
+//# # # # # # * * * * * *
+
+package www.com.pattern;
+
+public class pattern16 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=5;i++) {
+			for(int j=5;j>=i;j--) {
+				
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+
+	}
+
+}
+//output
+//* * * * * * 
+//* * * * * 
+//* * * * 
+//* * * 
+//* * 
+//* 
+package www.com.pattern;
+
+public class program17 {
+
+	public static void main(String[] args) {
+		
+		for(int i=0;i<=5;i++) {
+			for(int j=5;j>=i;j--) {	        
+		    System.out.print("-");
+		}
+			for(int j=1;j<=5;j++) {	        
+			    System.out.print("#");
+			    
+			
+		}
+		System.out.println();
+
+	}
+	}
+}
+
+//------#####
+//-----#####
+//----#####
+//---#####
+//--#####
+//-#####
+
+
+package www.com.pattern;
+
+public class program18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		for(int i=1;i<=5;i++) {
+			for(int j=1;j<=i;j++) {	        
+		    System.out.print("-");
+			}
+		
+			for(int j=1;j<=5;j++) {	        
+			    System.out.print("#");
+			    
+		}
+		System.out.println();
+	}
+	}
+
+}
+//-#####
+//--#####
+//---#####
+//----#####
+//-----#####
+
 
 	}
 
