@@ -1182,7 +1182,7 @@ import java.util.Scanner;
 public class pattern6 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the size : ");
@@ -2179,6 +2179,86 @@ public class arrayy {
          System.out.println("--------------------------");
          System.out.println("overall revenue genreates of all beta instituion are = "+overaall_revenue);
 	}}
+
+
+	//sum of an array
+package www.akash.home;
+
+import java.util.Scanner;
+
+public class Array {
+  
+public static void main(String[] args) { 
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the size of an array : ");
+	int n=sc.nextInt();
+	
+	int a[]= new int[n];
+	System.out.println("enter the elemsts of an array");
+	
+	for(int i=0;i<n;i++) {
+		System.out.print("enter the element at "+(i+1)+" :");
+		 a[i]=sc.nextInt();
+	}
+	int sum=0;
+	
+	
+	
+	for(int i=0;i<a.length;i++) {
+		sum=sum+a[i];
+	}
+	System.out.println("the sum of the array is "+sum);
+	
+	
+}}
+
+
+//average of an array
+package www.akash.home;
+
+import java.util.Scanner;
+
+public class Array {
+  
+public static void main(String[] args) { 
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the size of an array : ");
+	int n=sc.nextInt();
+	System.out.println("enter the elemsts of an array");
+	int sum=0;
+	float avg=0;
+	int a[]=new int[n];
+	for(int i=0;i<a.length;i++) {
+		
+		
+		System.out.print("enter the index of "+(i+1)+" : ");
+		a[i]=sc.nextInt();
+	}
+	for(int i=0;i<a.length;i++) {
+		
+		sum=sum+a[i];
+		}
+	avg=(sum/n);
+	System.out.println("the average of array is "+avg);
+	}
+}
+
+//reversing an array
+package www.akash.home;
+
+import java.util.Scanner;
+
+public class Array {
+  
+public static void main(String[] args) { 
+	
+	int a[]=new int[] {1,2,3,45,4};
+	for(int i=a.length-1;i>=0;i--) {
+		System.out.println(a[i]);
+	}
+}}
+
 */
+
 
 
