@@ -2510,6 +2510,118 @@ the secondlargest element is56
 the largest value index  in given array is : 0
 the Secondlargest value index  in given array is : 3
 
+
+
+
+Linear Search
+//with static input 
+package www.akash.home;
+
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		int[] arr=new int[] {34,21,334,23412,2345,4512,244,223,2331,1,4324};
+		int key=1;
+		 boolean found = false;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==key) {
+				System.out.println("array key found at index  : "+i);
+				 found=true;
+				break;				
+			}
+			
+			}
+		if (!found) {
+            System.out.println("Key is not found in the array.");
+		}
+		
+
+	}
+
+}
+
+//with dyanmic input
+package www.akash.home;
+
+import java.util.Arrays;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		int[] a=new int[]{12,21,23,11,3,4};
+		for(int i=0;i<a.length-1;i++) { //i < arr.length - 1 it does not include last elememnt
+			 for(int j=0;j<a.length-i-1;j++) {
+				 if(a[j]>a[j+1]) {
+					 int temp=a[j];
+					 a[j]=a[j+1];
+					 a[j+1]=temp;
+				 }
+				 
+			 }
+					 
+		}
+		 System.out.println("sorted array is ");
+
+		 System.out.println(Arrays.toString(a));
+	 
+	}
+
+}
+output=
+sorted array is 
+[3, 4, 11, 12, 21, 23]
+
+
+with dynamic input
+package www.akash.home;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size of an array : ");
+		int n=sc.nextInt();
+		
+		int a[]= new int[n];
+		System.out.println("enter the elemsts of an array");
+		
+		for(int i=0;i<n;i++) {
+			System.out.print("enter the element at "+(i+1)+" :");
+			 a[i]=sc.nextInt();
+		}
+		for(int i=0;i<a.length-1;i++) { //i < arr.length - 1 it does not include last elememnt
+			 for(int j=0;j<a.length-i-1;j++) {
+				 if(a[j]>a[j+1]) {
+					 int temp=a[j];
+					 a[j]=a[j+1];
+					 a[j+1]=temp;
+				 }
+				 
+			 }
+					 
+		}
+		 System.out.println("sorted array is ");
+
+		 System.out.println(Arrays.toString(a));
+	 
+	}
+
+}
+	output=
+enter the size of an array : 
+6
+enter the elemsts of an array
+enter the element at 1 :3234
+enter the element at 2 :23
+enter the element at 3 :34
+enter the element at 4 :1
+enter the element at 5 :67845
+enter the element at 6 :43
+sorted array is 
+[1, 23, 34, 43, 3234, 67845]
 */
 
 
