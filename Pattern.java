@@ -2721,5 +2721,91 @@ public class panagram {
 
 */
 
+/*
+public class StringMethods {
+
+	public static void main(String[] args) {
+		
+//literal based representations =equals
+				String s1="akash";
+				String s2="akash";
+				if(s1.equals(s2)) {
+					System.out.println("s1 equals to s2");
+				}
+				else {
+					System.out.println("s1 is not equals s2");
+				}
+				if(s1==s2) {
+					System.out.
+					println("address is equals");	
+				}
+				else {
+					System.out.println("address are not equals");	
+				}
+		 //output=s1 equals to s2
+				// address is equals
+
+//object based representation =equals
+				String s1=new String("Akash");
+				String s2=new String("Akash");
+				if(s1.equals(s2)) {
+					System.out.println("s1 equals to s2");
+				}
+				else {
+					System.out.println("s1 is not equals s2 ");
+				}
+				if(s1==s2) {
+					System.out.println("address is equals");	
+				}
+				else {
+					System.out.println("address are not equals");	
+				}
+          output=s1 equals to s2
+        		  address are not equals
+
+
+//literal based representations =equalsIgnoreCase
+		String s1="akash";
+		String s2="AKASH";
+		if(s1.equalsIgnoreCase(s2)) {
+			System.out.println("s1 equals to s2");
+		}
+		else {
+			System.out.println("s1 is not equals s2");
+		}
+		if(s1==s2) {
+			System.out.
+			println("address is equals");	
+		}
+		else {
+			System.out.println("address are not equals");	
+		}
+
+		output=s1 equals to s2
+				address are not equals
+
+
+//object based representation =equalsIgnoreCase
+		String s1=new String("Akash");
+		String s2=new String("akash");
+		if(s1.equalsIgnoreCase(s2)) {
+			System.out.println("s1 equals to s2");
+		}
+		else {
+			System.out.println("s1 is not equals s2 ");
+		}
+		if(s1==s2) {
+			System.out.println("address is equals");	
+		}
+		else {
+			System.out.println("address are not equals");	
+		}
+		output=s1 equals to s2
+				address are not equals
+				}
+
+}
+		 */
+	
 
 
