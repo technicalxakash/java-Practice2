@@ -2849,6 +2849,10 @@ public class patternNew {
 }
 }
 
+
+
+StringMethods
+
 public class StringMethods {
 
 	public static void main(String[] args) {
@@ -3022,17 +3026,63 @@ System.out.println("=======================================");
 		String s1 ="SachinRameshGandhi";
 		System.out.println(s1.getClass());
 		//output=class java.lang.String
-		*/
+	
 	}
 
 
 }
+		//lastIndexOf		
+		String s1 ="SachinRameshGandhi";
+		 System.out.println(s1.lastIndexOf("a"));//13
+        System.out.println("=======================================");
+       
+       
+//isBlank
+		String s1="";
+		String s2="     ";
+		System.out.println(s1.isBlank());  //output=true				                              	
+		System.out.println(s2.isBlank());     //true
+		System.out.println("=======================================");
+		
+
+//isEmpty
+		String s1="";
+		String s2="     ";
+		System.out.println(s1.isEmpty());// true
+		System.out.println(s2.isEmpty());//false
+		System.out.println("=======================================");
+		
+		
+//length	
+String s1 ="SachinRameshGandhi";
+System.out.println(s1.length()); //18
+System.out.println("=======================================");
+
+
+//replace		
+String s1 ="SachinRameshGandhi";
+System.out.println(s1.replace("Sachin","akash"));
+
 		
 	
+//startsWith
+String s1 ="SachinRameshGandhi";
+System.out.println();
 
 
 
-		 */
-	
+
+
+
+}
+
+
+}
+
+	*/
+
+
+
+		 	
 
 
