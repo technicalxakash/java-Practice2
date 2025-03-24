@@ -3263,6 +3263,44 @@ public class PrimeNoo {
 		}
 	}}
 
+
+	//strip
+		String s1 ="   Sachin   Ramesh   Gandhi   ";
+		System.out.println(s1.strip());
+		
+		
+//stripTrailing
+		String s1 ="   Sachin   Ramesh   Gandhi   ";
+		System.out.println(s1.stripTrailing());
+//stripTrailing
+		
+		System.out.println(s1.stripLeading());
+		
+		
+			
+		
+//substring
+		String s1 ="Sachin Ramesh Gandhi";
+		System.out.println(s1.substring(5)); //n Ramesh Gandhi
+		System.out.println(s1.substring(3,9));//hin Ra
+		
+		
+//to char array
+		String s1 ="Sachin Ramesh Gandhi";
+		char[] ch=s1.toCharArray();
+		System.out.println(Arrays.toString(ch));
+		//output=[S, a, c, h, i, n,  , R, a, m, e, s, h,  , G, a, n, d, h, i]
+
+		
+//toLowerCase and  toUpperCase
+		String s1 ="Sachin Ramesh Gandhi";
+		System.out.println(s1.toLowerCase());
+		System.out.println(s1.toUpperCase());
+		
+//trim
+		String s1 ="   Sachin   Ramesh   Gandhi   ";
+		System.out.println(s1.trim());
+
 	*/
 
 
