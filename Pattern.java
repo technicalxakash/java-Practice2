@@ -3301,6 +3301,143 @@ public class PrimeNoo {
 		String s1 ="   Sachin   Ramesh   Gandhi   ";
 		System.out.println(s1.trim());
 
+package www.akash.home;
+
+import java.util.Scanner;
+
+public class ForLoopPro {
+
+	public static void main(String[] args) {
+		/*
+//printing 1 to 100 values		 
+ Scanner sc= new Scanner(System.in);
+	System.out.println("enter the starting number : ");
+	int startingNumber=sc.nextInt();
+	System.out.println("enter the Ending number : ");
+	int EndingNumber=sc.nextInt();
+	for(int i=startingNumber;i<=EndingNumber;i++) {
+
+		System.out.println("the number from starting to Ending is : "+i);
+
+	}
+
+
+
+//priting even number between 200 to 500
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int startingNumber=sc.nextInt();
+		System.out.println("enter the Ending number : ");
+		int EndingNumber=sc.nextInt();
+		for(int i=startingNumber;i<=EndingNumber;i+=2) {
+          System.out.println("the even from starting to Ending is "+i);
+
+		}
+
+
+//print the numbers which are divisible by 7 for the range of 150 to 200
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int startingNumber=sc.nextInt();
+		System.out.println("enter the Ending number : ");
+		int EndingNumber=sc.nextInt();
+		for(int i=startingNumber;i<=EndingNumber;i++) {
+	         if(i%7==0) {
+	        	 System.out.println(i+ "divisible by 7");
+	         }
+
+			}
+
+
+
+//print the sum of the even number between 40 and 80
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int startingNumber=sc.nextInt();
+		System.out.println("enter the Ending number : ");
+		int EndingNumber=sc.nextInt();
+		int sum=0;
+		for(int i=startingNumber;i<=EndingNumber;i+=2) {
+			sum=sum+i;
+
+
+		}
+System.out.println(sum);
+
+//print the odd numbers between 200 to 25(reverse order)
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int startingNumber=sc.nextInt();
+		System.out.println("enter the Ending number : ");
+		int EndingNumber=sc.nextInt();
+		for(int i=startingNumber;i>=EndingNumber;i--) {
+         if(i%2!=0) {
+        	 System.out.println("the odd numbers are "+i);
+         }
+
+		}
+
+	//prime number or not
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int Number=sc.nextInt();
+		int divident=0;
+		if(Number!=1 && Number!=2) {
+			for(int i=3;i<=Number;i++) {
+				if(Number%i==0) {
+					divident++;
+				}
+			}
+
+		}
+		if(divident>=2) {
+			System.out.println("It is a not prime number: "+Number);
+		}
+		else {
+			System.out.println("It is a  prime number "+Number);
+		}
+		 
+		////prime number or not including range
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the starting number : ");
+		int startingNumber=sc.nextInt();
+		System.out.println("enter the Ending number : ");
+		int EndingNumber=sc.nextInt();
+
+		int i=0;
+
+		for(int Number=startingNumber;Number<=EndingNumber;Number++) {
+			int divident=0;
+
+			if(Number!=1 && Number!=2) {
+				for( i=1;i<=Number;i++) {
+					if(Number%i==0) {
+						divident++;
+						count++;
+					}
+				}
+				if(divident<=2) {
+					System.out.println("the prime from "+startingNumber+ "to "+EndingNumber+ "is "+ Number);
+
+
+				}			
+
+			}
+
+
+
+		}
+
+
+//
+
+	}
+
+}
+
+
 	*/
 
 
