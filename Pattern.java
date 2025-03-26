@@ -3436,6 +3436,283 @@ System.out.println(sum);
 	}
 
 }
+1)palindrome
+package www.com.program.string; 
+
+
+import java.util.Scanner;
+
+public class program1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the string : ");
+		String str=sc.next();
+	
+		String temp="";
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			temp=temp+str.charAt(i);
+			
+		}
+		
+	
+	if(str.equals(temp)) {
+		System.out.println("it is a palindrome");
+	}
+	else {
+		System.out.println("not a palindrome");
+	}
+	
+    sc.close();
+
+	}
+
+}
+output=enter the string : racecar
+it is a palindrome
+
+
+//2)Total numbers of vowels and consonents
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class program2 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	System.out.print("enter the string : ");
+	String str=sc.next();
+	str= str.toUpperCase();
+	int vowels=0;
+	int consonents=0;
+	
+	
+    for(int i=0;i<str.length();i++) {
+    	
+    	if(str.charAt(i)>=65 && str.charAt(i)<=90 ) {
+    		if(str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U') {
+    			
+    			vowels++;
+    		}
+    		else { 
+    			consonents++;	
+    		}	
+    	}
+    }
+    System.out.println("Total number of vowels are "+vowels);
+    System.out.println("Total number of consonents are "+consonents);
+
+sc.close();
+	}
+
+}
+
+enter the string : aesdfgxcjhfdg
+Total number of vowels are 2
+Total number of consonents are 11
+
+
+/3)Capital and small letters of Voweles
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class Program3 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the string : ");
+		String str=sc.next();
+		int UpperCase=0;
+		int LowerCase=0;
+       
+		 for(int i=0;i<str.length();i++) {
+	        	
+	        	if(str.charAt(i)>=65 && str.charAt(i)<=90 || str.charAt(i)>=97 && str.charAt(i)<=122 ) 
+	        	{
+	        		if(str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U') {
+	        			
+	        			UpperCase++;
+	        		}
+	        		else {
+	        			
+	        			LowerCase++;
+	        		}
+	        			}	
+	        		}
+		 System.out.println(UpperCase);
+		 System.out.println(LowerCase);
+
+	}
+
+}
+enter the string : AEiou
+2
+3
+
+
+
+
+//4)to convert all the lowercase to uppercase or vice versa
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the string : ");
+		String str=sc.next();
+	 
+	        String result = ""; 
+	        String res="";
+
+	        for (int i = 0; i < str.length(); i++) {
+	            char ch = str.charAt(i);
+
+	            if (ch >= 'a' && ch <= 'z') {  
+	                ch = (char) (ch - 32);  
+	            }
+
+	            result += ch; 
+	        
+	        char chh = str.charAt(i);
+	        if (chh >= 'A' && chh <= 'Z') {  
+             chh = (char) (chh + 32);  
+         }
+	        res += chh;
+	        }
+	        System.out.println("Converted String of all upperCase: " + result);
+	        System.out.println("Converted String of all lowerCase: " + res);
+	        
+
+	}
+
+}
+enter the string : asdfgASDFG
+Converted String of all upperCase: ASDFGASDFG
+Converted String of all lowerCase: asdfgasdfg
+
+
+
+//5)Find the sum of Vowels in the given String
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class Program5 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+
+		String str=sc.nextLine();
+
+		int sum=0;
+
+
+		for(int i=0;i<str.length();i++) {
+
+			
+				if(str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U'||str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u') {
+
+					sum=sum+str.charAt(i);
+				}
+
+			}
+		
+
+		System.out.println("the sum of all the vowels present int he string is : "+sum);
+
+	}
+
+}
+Enter the string : 
+asdwerty
+the sum of all the vowels present int he string is : 198
+
+
+
+
+//6)Write a program to find the product of all the element which is present in the even position and is not a vowel
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class program6 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		long product=1;
+		
+		for(int i=0;i<str.length();i++) {
+           if(i%2==0)
+			{
+				if(str.charAt(i)!='a'&&str.charAt(i)!='e'&&
+						str.charAt(i)!='i'&&str.charAt(i)!='o'&&str.charAt(i)!='u'&&str.charAt(i)!='A'&&str.charAt(i)!='E'&&str.charAt(i)!='I'&&str.charAt(i)!='O'&&str.charAt(i)!='U')
+						
+				{
+
+					System.out.println("Considered elements "+str.charAt(i));
+					product=product*str.charAt(i);
+				}
+
+			}
+		}
+		System.out.println("the product = "+product);
+
+	}
+
+}
+Enter the string : 
+asdfgQWERTYUasdfg SDFGH wertyu
+Considered elements d
+Considered elements g
+Considered elements W
+Considered elements R
+Considered elements Y
+Considered elements d
+Considered elements g
+Considered elements S
+Considered elements F
+Considered elements H
+Considered elements w
+Considered elements r
+Considered elements y
+the product = 3078191566754841600
+
+
+//7)count of words
+package www.com.program.string;
+
+import java.util.Scanner;
+
+public class Program7 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		str=str.trim();
+		int space_count=0;
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)==' ' && str.charAt(i+1)!=' ') {
+				space_count++;
+			}
+		}
+       int word_count=space_count+1;
+       System.out.println("Total number of words is "+word_count);
+	}
+
+	}
+Enter the string : 
+tryui dfghj gjhkl      hgvjbknlkm
+Total number of words is 4
 
 
 	*/
