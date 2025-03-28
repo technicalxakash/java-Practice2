@@ -3876,6 +3876,206 @@ public class Program10 {
 		
 	}
 		}
+	//it is a palindorme or not
+		String str="racecar";
+		str=str.toLowerCase();
+		String rev="";
+		for(int i=str.length()-1;i>=0;i--) {
+			rev=rev+str.charAt(i);
+		}
+		if(str.equals(rev)) {
+			System.out.println("it is a palindrome ");
+		}
+		else {
+			System.out.println("it is not a palindrome");
+		}
+
+
+//convert all lowerCase into Uppercase Letters
+		String str="racecar";
+		char[] array=str.toCharArray();
+		for(int i=0;i<array.length;i++) {
+			if(array[i]>='a' && array[i]<='z') {
+				array[i]=(char) (array[i]-32);
+			}
+
+		}
+		str =new String(array);
+		System.out.println(str);
+
+////convert all upperCase into LowerCase Letters
+		String str="RACECAR";
+		char[] array=str.toCharArray();
+		for(int i=0;i<array.length;i++) {
+			if(array[i]>='A' && array[i]<='Z') {
+				array[i]=(char) (array[i]+32);
+			}
+
+		}
+		str =new String(array);
+		System.out.println(str);
+
+
+
+
+
+		        String str = "RaCeCaR";  
+		        char[] array = str.toCharArray();
+
+		        for (int i = 0; i < array.length; i++) {
+		            if (array[i] >= 'a' && array[i] <= 'z') {
+		                array[i] = (char) (array[i] - 32);  // Convert lowercase to uppercase
+		            } else if (array[i] >= 'A' && array[i] <= 'Z') {
+		                array[i] = (char) (array[i] + 32);  // Convert uppercase to lowercase
+		            }
+		        }
+
+		        str = new String(array);
+		        System.out.println("Converted String: " + str);
+		 
+
+//convert all upperCase into LowerCase Letters
+
+
+		        String str = "AEIOUaeiou"; 
+		        String result = ""; 
+		        String res="";
+
+		        for (int i = 0; i < str.length(); i++) {
+		            char ch = str.charAt(i);
+
+		            if (ch >= 'a' && ch <= 'z') {  
+		                ch = (char) (ch - 32);  
+		            }
+
+		            result += ch; 
+		        
+		        char chh = str.charAt(i);
+		        if (chh >= 'A' && chh <= 'Z') {  
+	                chh = (char) (chh + 32);  
+	            }
+		        res += chh;
+		        }
+		        System.out.println("Converted String of all upperCase: " + result);
+		        System.out.println("Converted String of all lowerCase: " + res);
+		        
+		      
+		
+		
+//write a java program to count the number of  character in a string
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		System.out.println("input : "+str);
+		System.out.println("output : "+str.length());
+		
+		
+		output=Enter the string : 
+			asdfgbnasdfghzxcvbnqwertyu
+			input : asdfgbnasdfghzxcvbnqwertyu
+			output : 26
+			
+			
+			
+		
+//Write a java program to reverse each word of a given String	  
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		String[] words=str.split(" ");
+		
+		String ouputString="";
+		for(int i=0;i<words.length;i++) {
+			String word=words[i];
+			String reverseWord="";
+			for(int j=word.length()-1;j>=0;j--) {
+				reverseWord=reverseWord+word.charAt(j);
+			}
+			//if(i!=word.length()-1) ouputString+=reverseWord+" ";
+			//else ouputString+=reverseWord;
+			 ouputString+=reverseWord+" ";
+		}
+		System.out.println(ouputString.trim());
+		
+		 
+//write a java program to count the number of words in a string
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		
+		String[] words=str.split(" ");
+		
+		int count=0;
+		for(int i=0;i<words.length;i++) {
+			count++;
+		}
+		System.out.println("the number of words in a given String is "+count);  //output =Enter the string : 
+		hello good morining akash
+		the number of words in a given String is 4
+		
+		 
+		
+//Write a java program to count the total number of occurences of a given character in a string
+		
+		
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		
+		System.out.println("Enter the target character : ");
+	    char word=sc.next().charAt(0);
+	    int count=0;
+	    
+	    for(int i=0;i<str.length();i++) {
+	    	
+	    	if(word==str.charAt(i)) {
+	    		count++;
+	    	}
+	    }
+	    
+	 System.out.println("the target character is "+word);
+	    System.out.println("the number of words in a given String is "+count);
+		
+	
+		
+//Write a java program to reverse a string
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		
+		String revStr="";
+		for(int i=str.length()-1;i>=0;i--) {
+			revStr=revStr+str.charAt(i);
+		}
+		System.out.println(str+" the reversed string is  "+revStr);
+		System.out.println(str.length());
+		System.out.println(revStr.length());
+		
+		
+		
+		
+//reversing each word in given string
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		String[] words=str.split(" ");
+		
+		
+		String revProduct="";
+		for(int i=0;i<words.length;i++) {
+			String word=words[i];
+			String reverseWord="";
+			for(int j=word.length()-1;j>=0;j--) {
+				
+				reverseWord=reverseWord+word.charAt(j);
+			}
+			revProduct+=reverseWord + " ";
+		}
+		System.out.println(revProduct);
 
 	*/
 
