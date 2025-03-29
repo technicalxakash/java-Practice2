@@ -4076,8 +4076,82 @@ public class Program10 {
 			revProduct+=reverseWord + " ";
 		}
 		System.out.println(revProduct);
+//Write a java program to modify the string like change odd words to uppercase and reverse the even words		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		String buck="";
+		String[] words=str.split(" ");
+		String outputString="";
+		 String revProduct="";
+		
+		for(int i=0;i<words.length;i++) {
+			String word=words[i];
+			if(i%2==0) {
+				revProduct+=word.toUpperCase();
+				
+			}
 
-	*/
+			else {
+				String reverseWord="";
+				for(int j=word.length()-1;j>=0;j--) {
+					
+					reverseWord=reverseWord+word.charAt(j);
+				}
+				revProduct+=reverseWord+" ";
+
+			}
+			if (i < words.length - 1) {
+                revProduct += " ";
+            }
+	 
+			}
+		
+		System.out.println(revProduct);
+		
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		String Alphabets="";
+		String Numbers="";
+		String Specialchar="";
+		int alphacount=0;
+		int numcount=0;
+		int Specialcharcount=0;
+		
+		for(int i=0;i<str.length();i++) {
+			
+			if(str.charAt(i)>='A' && str.charAt(i)>='Z' || str.charAt(i)>='a' && str.charAt(i)>='z'){
+				Alphabets=Alphabets+str.charAt(i);
+				alphacount++;
+			}
+			else if (str.charAt(i)>='0' && str.charAt(i)>='9'){
+				Numbers=Numbers+str.charAt(i);
+				numcount++;
+			}
+			else {
+				Specialchar=Specialchar+str.charAt(i);
+				Specialcharcount++;
+			}
+			
+			
+			
+		}
+		System.out.println("Alphabets: " + Alphabets);
+        System.out.println("SumOfalphabets : "+alphacount);
+        System.out.println("===============================");
+        System.out.println("Numbers: " + Numbers);
+        System.out.println("sumOfnumbers : "+numcount);
+        System.out.println("===============================");
+        System.out.println("specialChars : "+Specialchar);
+        System.out.println("sumOfspecialChars : " +Specialcharcount);
+        System.out.println("===============================");
+        
+        */
+		
+		
+	
 
 
 
