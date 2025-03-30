@@ -4147,6 +4147,87 @@ public class Program10 {
         System.out.println("specialChars : "+Specialchar);
         System.out.println("sumOfspecialChars : " +Specialcharcount);
         System.out.println("===============================");
+
+
+
+
+
+		
+     package www.akash.home;
+//constructor is a block of code it is called when a instance of the class is created
+
+ 1)default constructor or implicit constructor=should always it is a public
+ 2)explicit constructor
+public class Constructors {
+
+	int i;
+	
+	public Constructors(){
+		i=10;
+		System.out.println("Constructor is called");
+	}
+	public Constructors(int a){
+		i=a;
+	}
+
+	public static void main(String[] args) {
+		
+		Constructors  cp=new Constructors();
+		System.out.println(cp.i);
+		
+		
+	}
+
+}
+
+
+output=Constructor is called
+10
+
+
+ 
+
+
+public class Constructors {
+
+	int i;
+	
+	public Constructors(){
+		i=10;
+		System.out.println("Constructor is called");
+	}
+	public Constructors(int a){
+		i=a;
+	}
+
+	public static void main(String[] args) {
+		
+		Constructors  cp=new Constructors(40);
+		System.out.println(cp.i);
+		
+		
+	}
+
+}
+output=40
+
+
+
+
+		//WAP to find the first repeted and non-repeated characters in the given string
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string : ");
+		String str=sc.nextLine();
+		
+		char firstRepeatedChar=' ';
+		char firstNonRepeatedChar=' ';
+		
+		for(int i=0;i<str.length();i++) {
+			char temp=str.charAt(i)
+			if(tempChar!=0)
+		}
+		
         
         */
 		
