@@ -4606,6 +4606,117 @@ OOP is faster and easier to execute
 OOP provides a clear structure for the programs
 OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
 OOP makes it possible to create full reusable applications with less code and shorter development time
+
+1)Inheritence
+
+
+package Oops.www.com;
+
+public class Guest {
+
+	public void read() {
+		System.out.println(" he can read ");
+	}
+
+}
+
+package Oops.www.com;
+
+public class Developer {
+
+	public void read() {
+		System.out.println(" he can read ");
+	}
+	public void write() {
+		System.out.println(" he can write");
+	}
+
+}
+
+package Oops.www.com;
+
+public class admin {
+
+		public void read() {
+			System.out.println(" he can read ");
+		}
+		public void write() {
+			System.out.println(" he can write");
+		}
+		public void manage() {
+			System.out.println(" he can manage ");
+		}
+
+}
+package Oops.www.com;
+
+public class Guest {
+
+	public void read() {
+		System.out.println(" he can read ");
+	}
+
+}
+package Oops.www.com;
+
+public class Developer extends Guest{
+
+
+	public void write() {
+		System.out.println(" he can write");
+	}
+
+}
+package Oops.www.com;
+
+public class admin extends Developer {
+
+
+		public void manage() {
+			super.read();
+			write();
+			
+			System.out.println(" he can manage ");
+		}
+       public void read() {
+    	   
+    	   System.out.println("admin can read ");
+       }
+
+
+}
+ //child extends parent
+ package Oops.www.com;
+
+public class Inheritence{
+
+	public static void main(String[] args) {
+	
+
+		Guest g=new Guest();
+		g.read();
+		
+		Developer d=new Developer();
+		d.read();
+		d.write();
+		
+		admin in=new admin();
+		in.read();
+		in.write();
+		in.manage();
+		
+	}
+
+}
+output=
+ he can read 
+ he can read 
+ he can write
+admin can read 
+ he can write
+ he can read 
+ he can write
+ he can manage
         */
 		
 		
